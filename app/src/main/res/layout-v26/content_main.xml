@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.damilola.searchapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/txt_white_color">
+
+        <ImageView
+            android:id="@+id/image_button"
+            android:layout_width="107dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_it"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/appname_display"
+            android:textColor="@color/txt_black_color"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/username"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/email_placeholder"
+            android:textColorHint="@color/txt_black_color"
+            android:inputType="textEmailAddress|text"
+            android:background="@drawable/view_looks"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/e_username"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/e_username_placeholder"
+            android:textColorHint="@color/txt_black_color"
+            android:inputType="textEmailAddress|text"
+            android:background="@drawable/view_looks"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/full_name"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/full_name_placeholder"
+            android:textColorHint="@color/txt_black_color"
+            android:inputType="textEmailAddress|text"
+            android:background="@drawable/view_looks"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/password_placeholder"
+            android:id="@+id/password"
+            android:textColorHint="@color/txt_black_color"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto"
+            android:inputType="textPassword"
+            android:background="@drawable/view_looks"
+            android:autofillHints="password" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/re_password_placeholder"
+            android:id="@+id/confirm_password"
+            android:textColorHint="@color/txt_black_color"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/roboto"
+            android:inputType="textPassword"
+            android:background="@drawable/view_looks"
+            android:autofillHints="confirm password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="2dp"
+                android:translationZ="5dp"
+                android:onClick="SignIn"
+                app:cardCornerRadius="7dp"
+                android:backgroundTint="@color/txt_black_color"
+                android:layout_height="35dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+
+                    android:text="@string/login"
+                    android:textColor="@color/txt_white_color" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="2dp"
+                android:translationZ="5dp"
+                android:onClick="SignUp"
+                app:cardCornerRadius="7dp"
+                android:backgroundTint="@color/txt_black_color"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto"
+
+                    android:text="@string/sign_up"
+                    android:textColor="@color/txt_white_color" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
